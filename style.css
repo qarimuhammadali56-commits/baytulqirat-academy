@@ -3220,5 +3220,32 @@ body{
     background:#e09696;  
 
 }
+.footer-box a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px 0;
+    transition: 0.3s;
+}
 
+.footer-box a:hover {
+    color: #FFD700;
+}
+
+.footer-box i {
+    width: 22px;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.fa-phone-alt {
+    color: #34B7F1;
+}
+
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-envelope {
+    color: #EA4335;
 }
