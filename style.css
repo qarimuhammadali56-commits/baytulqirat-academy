@@ -3690,3 +3690,38 @@ header nav ul li a:hover::after{
     }
 
 }
+/*=================================
+   CONTACT - MOBILE ONE BY ONE
+=================================*/
+
+@media (max-width:768px){
+
+    .contact-box{
+        display:flex !important;
+
+        flex-direction:column !important;
+
+        align-items:center !important;
+
+        justify-content:center !important;
+
+        width:100% !important;
+
+        gap:20px !important;
+
+        overflow-x:hidden !important;
+    }
+
+    .contact-card{
+        width:min(280px, 90%) !important;
+
+        max-width:280px !important;
+
+        min-width:0 !important;
+
+        box-sizing:border-box !important;
+
+        margin:0 auto !important;
+    }
+
+}
