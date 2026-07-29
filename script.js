@@ -86,44 +86,95 @@ window.addEventListener("load", () => {
 
 });
 /*=========================
-      STICKY HEADER
+   HEADER + MOBILE MENU
 =========================*/
 
 const header = document.querySelector("header");
 
-if (header) {
+const mobileMenuBtn =
+    document.querySelector(".mobile-menu-btn");
 
-    let lastScroll = 0;
+const nav = document.querySelector("header nav");
+
+const whatsappBtn =
+    document.querySelector(".header-btn");
+
+let lastScroll = 0;
+
+
+/* Header Hide / Show */
+
+if (header) {
 
     window.addEventListener("scroll", () => {
 
-        const currentScroll = window.pageYOffset;
+        const currentScroll = window.scrollY;
 
-        // Header Background
-        if (currentScroll > 50) {
+        if (
+            currentScroll > lastScroll &&
+            currentScroll > 120
+        ) {
 
-            header.style.background = "rgba(2,107,53,.96)";
-            header.style.padding = "0px";
-
-        } else {
-
-            header.style.background = "rgba(2,107,53,.90)";
-            header.style.padding = "0px";
-
-        }
-
-        // Hide / Show Header
-        if (currentScroll > lastScroll && currentScroll > 120) {
-
-            header.style.transform = "translateY(-100%)";
+            header.classList.add("hide");
 
         } else {
 
-            header.style.transform = "translateY(0)";
+            header.classList.remove("hide");
 
         }
 
         lastScroll = currentScroll;
+
+    });
+
+}
+
+
+/* Three Dots Menu */
+
+if (mobileMenuBtn && nav) {
+
+    mobileMenuBtn.addEventListener("click", () => {
+
+        nav.classList.toggle("mobile-menu-open");
+
+        if (whatsappBtn) {
+
+            whatsappBtn.classList.toggle(
+                "mobile-whatsapp-open"
+            );
+
+        }
+
+    });
+
+}
+
+
+/* Close Menu After Clicking a Link */
+
+if (nav) {
+
+    const menuLinks =
+        nav.querySelectorAll("a");
+
+    menuLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            nav.classList.remove(
+                "mobile-menu-open"
+            );
+
+            if (whatsappBtn) {
+
+                whatsappBtn.classList.remove(
+                    "mobile-whatsapp-open"
+                );
+
+            }
+
+        });
 
     });
 
