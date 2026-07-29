@@ -85,90 +85,33 @@ window.addEventListener("load", () => {
     });
 
 });
-/*=========================
-   HEADER + MOBILE MENU
-=========================*/
+/*=================================
+   MOBILE THREE DOTS MENU
+=================================*/
 
-const header = document.querySelector("header");
+document.addEventListener("DOMContentLoaded", function () {
 
-const mobileMenuBtn =
-    document.querySelector(".mobile-menu-btn");
+    const menuButton =
+        document.querySelector(".mobile-menu-btn");
 
-const nav = document.querySelector("header nav");
+    const mobileNav =
+        document.querySelector("header nav");
 
-const whatsappBtn =
-    document.querySelector(".header-btn");
-
-let lastScroll = 0;
-
-
-/* Header Hide / Show */
-
-if (header) {
-
-    window.addEventListener("scroll", () => {
-
-        const currentScroll = window.scrollY;
-
-        if (
-            currentScroll > lastScroll &&
-            currentScroll > 120
-        ) {
-
-            header.classList.add("hide");
-
-        } else {
-
-            header.classList.remove("hide");
-
-        }
-
-        lastScroll = currentScroll;
-
-    });
-
-}
+    const whatsappButton =
+        document.querySelector(".header-btn");
 
 
-/* Three Dots Menu */
+    if (menuButton && mobileNav) {
 
-if (mobileMenuBtn && nav) {
+        menuButton.addEventListener("click", function () {
 
-    mobileMenuBtn.addEventListener("click", () => {
-
-        nav.classList.toggle("mobile-menu-open");
-
-        if (whatsappBtn) {
-
-            whatsappBtn.classList.toggle(
-                "mobile-whatsapp-open"
-            );
-
-        }
-
-    });
-
-}
-
-
-/* Close Menu After Clicking a Link */
-
-if (nav) {
-
-    const menuLinks =
-        nav.querySelectorAll("a");
-
-    menuLinks.forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            nav.classList.remove(
+            mobileNav.classList.toggle(
                 "mobile-menu-open"
             );
 
-            if (whatsappBtn) {
+            if (whatsappButton) {
 
-                whatsappBtn.classList.remove(
+                whatsappButton.classList.toggle(
                     "mobile-whatsapp-open"
                 );
 
@@ -176,9 +119,40 @@ if (nav) {
 
         });
 
+    }
+
+
+    /* Menu link دبانے پر menu بند */
+
+    const menuLinks =
+        document.querySelectorAll(
+            "header nav a"
+        );
+
+    menuLinks.forEach(function (link) {
+
+        link.addEventListener(
+            "click",
+            function () {
+
+                mobileNav.classList.remove(
+                    "mobile-menu-open"
+                );
+
+                if (whatsappButton) {
+
+                    whatsappButton.classList.remove(
+                        "mobile-whatsapp-open"
+                    );
+
+                }
+
+            }
+        );
+
     });
 
-}
+});
 /*=========================
       Loading Bar
 =========================*/

@@ -3725,3 +3725,49 @@ header nav ul li a:hover::after{
     }
 
 }
+/*=================================
+   MOBILE MENU OPEN FIX
+=================================*/
+
+@media (max-width:768px){
+
+    header nav{
+        display:none;
+    }
+
+    header nav.mobile-menu-open{
+        display:block !important;
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        z-index:10000;
+
+        background:
+            rgba(2,80,40,.98);
+    }
+
+    .header-btn{
+        display:none;
+    }
+
+    .header-btn.mobile-whatsapp-open{
+        display:flex !important;
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        z-index:10001;
+    }
+
+}
