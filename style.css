@@ -3592,3 +3592,101 @@ header nav ul li a:hover::after{
 .card:hover::after{
     width:100%;
 }
+/*=================================
+   COUNTRIES - MOBILE 2 CARDS
+=================================*/
+
+@media (max-width:768px){
+
+    .country-box{
+        display:grid !important;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap:12px !important;
+
+        padding:0 5px;
+    }
+
+    .country-card{
+        width:100%;
+
+        min-width:0;
+
+        padding:16px 8px;
+
+        border-radius:14px;
+
+        box-sizing:border-box;
+    }
+
+    .country-card img{
+        width:55px;
+
+        height:55px;
+
+        margin-bottom:8px;
+    }
+
+    .country-card h3{
+        font-size:36px;
+
+        margin-bottom:8px;
+    }
+
+    .country-card h4{
+        font-size:15px;
+
+        margin:0;
+    }
+
+}
+/*=================================
+   MOBILE THREE DOTS - FORCE SHOW
+=================================*/
+
+@media (max-width:768px){
+
+    .header-container{
+        display:flex !important;
+        flex-direction:row !important;
+        justify-content:space-between !important;
+        align-items:center !important;
+    }
+
+    .mobile-menu-btn{
+        display:flex !important;
+
+        align-items:center;
+        justify-content:center;
+
+        width:48px;
+        height:48px;
+
+        margin-left:auto;
+
+        padding:0;
+
+        border:none;
+
+        background:transparent;
+
+        color:#FFD700;
+
+        font-size:38px;
+
+        font-weight:bold;
+
+        line-height:1;
+
+        cursor:pointer;
+
+        position:relative;
+
+        z-index:10001;
+
+        flex-shrink:0;
+    }
+
+}
