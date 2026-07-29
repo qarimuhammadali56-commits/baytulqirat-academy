@@ -3771,3 +3771,142 @@ header nav ul li a:hover::after{
     }
 
 }
+/*=================================
+   MOBILE MENU FINAL FIX
+=================================*/
+
+@media (max-width:768px){
+
+    /* Three Dots Button */
+
+    .mobile-menu-btn{
+        display:flex !important;
+
+        align-items:center;
+        justify-content:center;
+
+        width:48px;
+        height:48px;
+
+        margin-left:auto;
+
+        padding:0;
+
+        border:none;
+
+        background:transparent;
+
+        color:#FFD700;
+
+        font-size:38px;
+
+        line-height:1;
+
+        cursor:pointer;
+
+        position:relative;
+
+        z-index:10002;
+
+        flex-shrink:0;
+    }
+
+
+    /* Menu بند حالت میں */
+
+    header nav{
+        display:none !important;
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        background:rgba(2,80,40,.98);
+
+        box-shadow:0 12px 25px rgba(0,0,0,.30);
+
+        z-index:10000;
+    }
+
+
+    /* Three Dots دبانے پر Menu */
+
+    header nav.mobile-menu-open{
+        display:block !important;
+    }
+
+
+    /* Menu Links */
+
+    header nav ul{
+        display:flex !important;
+
+        flex-direction:column !important;
+
+        width:100%;
+
+        margin:0;
+
+        padding:8px 15px;
+
+        gap:0;
+
+        list-style:none;
+    }
+
+
+    header nav ul li{
+        width:100%;
+    }
+
+
+    header nav ul li a{
+        display:block;
+
+        padding:14px 10px;
+
+        color:white;
+
+        font-size:16px;
+
+        text-decoration:none;
+
+        border-bottom:
+            1px solid rgba(255,255,255,.15);
+    }
+
+
+    /* Mobile WhatsApp Button */
+
+    .header-btn{
+        display:none !important;
+    }
+
+
+    .header-btn.mobile-whatsapp-open{
+        display:flex !important;
+
+        position:absolute;
+
+        left:0;
+
+        top:auto;
+
+        width:100%;
+
+        padding:14px;
+
+        margin:0;
+
+        border-radius:0;
+
+        justify-content:center;
+
+        z-index:10001;
+    }
+
+}
