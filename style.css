@@ -3910,3 +3910,73 @@ header nav ul li a:hover::after{
     }
 
 }
+/*==========================
+      PREMIUM CURSOR
+==========================*/
+
+@media (min-width:769px){
+
+.cursor-dot{
+
+    width:10px;
+    height:10px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:999999;
+
+    box-shadow:0 0 10px #25D366;
+
+}
+
+.cursor-ring{
+
+    width:13px;
+    height:13px;
+
+    border:2px solid #FFD700;
+
+    border-radius:50%;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:999998;
+
+    transition:all .1s linear;
+
+    box-shadow:0 0 18px rgba(143, 0, 0, 0.7);
+
+}
+
+}
+
+/* Mobile Hide */
+
+@media (max-width:768px){
+
+.cursor-dot,
+.cursor-ring{
+
+display:none;
+
+}
+
+}
