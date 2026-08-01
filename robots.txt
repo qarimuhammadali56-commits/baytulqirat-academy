@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qarimuhammadali56-commits.github.io/baytulqirat-academy/sitemap.xml
