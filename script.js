@@ -235,3 +235,48 @@ ring.style.top=e.clientY+"px";
 });
 
 }
+/*=========================
+          FAQ
+=========================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const faqs = document.querySelectorAll(".faq-item");
+
+    faqs.forEach(faq => {
+
+        const question = faq.querySelector(".faq-question");
+        const answer = faq.querySelector(".faq-answer");
+        const icon = question.querySelector("span");
+
+        question.addEventListener("click", () => {
+
+            const isOpen = faq.classList.contains("active");
+
+            // سب FAQ بند کریں
+            faqs.forEach(item => {
+
+                item.classList.remove("active");
+
+                item.querySelector(".faq-answer").style.maxHeight = null;
+
+                item.querySelector(".faq-question span").style.transform = "rotate(0deg)";
+
+            });
+
+            // اگر یہ پہلے بند تھا تو کھول دیں
+            if (!isOpen) {
+
+                faq.classList.add("active");
+
+                answer.style.maxHeight = answer.scrollHeight + "px";
+
+                icon.style.transform = "rotate(180deg)";
+
+            }
+
+        });
+
+    });
+
+});
