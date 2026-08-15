@@ -4176,3 +4176,27 @@ display:none;
     left:0;
 
 }
+/* =========================================
+   SOCIAL BAR - MOBILE ABOUT ONLY
+   ========================================= */
+
+/* Laptop / Desktop:
+   Social icons ہر جگہ نظر آئیں گے */
+.social-bar {
+    display: flex;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    /* شروع میں mobile پر social icons چھپے رہیں گے */
+    .social-bar {
+        display: none;
+    }
+
+    /* جب About section screen پر آئے گا
+       تو social icons نظر آئیں گے */
+    body.about-visible .social-bar {
+        display: flex;
+    }
+}

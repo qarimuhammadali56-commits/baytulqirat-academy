@@ -357,6 +357,36 @@ class="floating-call">
 </a>
 <script src="script.js"></script>
 </body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const aboutSection = document.getElementById("about");
+
+    if (!aboutSection) return;
+
+    const observer = new IntersectionObserver(
+        function (entries) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+                    document.body.classList.add("about-visible");
+                } else {
+                    document.body.classList.remove("about-visible");
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.2
+        }
+    );
+
+    observer.observe(aboutSection);
+
+});
+</script>
 </html>
 
 <section class="courses reveal" id="courses">
@@ -518,7 +548,7 @@ class="floating-call">
 
             <option>Tajweed Course</option>
 
-            <option>Maqamat course</option>
+            <option>Maqamat Course</option>
 
         </select>
 
