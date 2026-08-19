@@ -4200,3 +4200,54 @@ display:none;
         display: flex;
     }
 }
+/*=================================
+       HERO HADITH CALLIGRAPHY
+=================================*/
+
+.hero-hadith {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hero-hadith img {
+    display: block;
+    height: auto;
+    object-fit: contain;
+}
+
+.hadith-qal {
+    width: min(520px, 80%);
+    margin-bottom: 8px;
+}
+
+.hadith-khairukum {
+    width: min(720px, 92%);
+    margin-bottom: 20px;
+}
+
+
+/*=================================
+          MOBILE HERO
+=================================*/
+
+@media (max-width: 768px) {
+
+    .hero-hadith {
+        margin-bottom: 15px;
+    }
+
+    .hadith-qal {
+        width: 85%;
+        margin-bottom: 5px;
+    }
+
+    .hadith-khairukum {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+
+}
