@@ -164,6 +164,54 @@ toggleBtn.addEventListener("click", () => {
 </div>
 <div class="cursor-ring"></div>
 <div class="cursor-dot"></div>
+<!-- =========================
+        PAYMENT POPUP
+========================== -->
+
+<div class="payment-popup" id="paymentPopup">
+
+    <div class="payment-popup-content">
+
+        <button
+            class="close-payment"
+            onclick="closePayment()">
+            ×
+        </button>
+
+        <h3>BAYT-UL-QIRAT ACADEMY</h3>
+
+        <p class="payment-subtitle">
+            Scan the QR Code to make your payment
+            through EasyPaisa.
+        </p>
+
+        <div class="qr-wrapper">
+
+            <img
+                src="image/easypaisa-qr.png"
+                alt="EasyPaisa Payment QR Code">
+
+        </div>
+
+        <p class="payment-note">
+            After completing the payment,
+            please send the payment receipt on WhatsApp.
+        </p>
+
+        <a
+            href="https://wa.me/923392466941?text=Assalam-o-Alaikum%20Bayt-ul-Qirat%20Academy%2C%20I%20have%20completed%20my%20course%20payment.%20I%20am%20sending%20the%20payment%20receipt."
+            target="_blank"
+            rel="noopener"
+            class="payment-whatsapp">
+
+            <i class="fab fa-whatsapp"></i>
+            SEND RECEIPT ON WHATSAPP
+
+        </a>
+
+    </div>
+
+</div>
 </body>
 
 <header>
@@ -446,6 +494,186 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 
 </section>
+
+<!-- =========================
+      PREMIUM PAYMENT
+========================== -->
+
+<section class="premium-payment reveal" id="payment">
+
+    <div class="payment-heading">
+        <span>SECURE PAYMENT</span>
+        <h2>PAY YOUR COURSE FEE</h2>
+        <p>
+            Simple, secure and convenient payment for
+            Bayt-ul-Qirat Academy students worldwide.
+        </p>
+    </div>
+
+    <div class="premium-payment-card">
+
+        <div class="payment-card-top">
+
+            <div>
+                <span class="payment-label">BAYT-UL-QIRAT</span>
+                <h3>Academy Payment</h3>
+            </div>
+
+            <div class="payment-symbol">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+
+        </div>
+
+
+        <div class="payment-divider"></div>
+
+
+        <div class="payment-card-middle">
+
+            <div class="payment-brand">
+                <span class="payment-brand-icon">
+                    <i class="fas fa-wallet"></i>
+                </span>
+
+                <div>
+                    <strong>EasyPaisa</strong>
+                    <small>Secure QR Payment</small>
+                </div>
+            </div>
+
+            <div class="payment-secure">
+                <i class="fas fa-lock"></i>
+                Secure
+            </div>
+
+        </div>
+
+
+        <div class="payment-description">
+
+            <p>
+                Pay your Quran learning course fee
+                conveniently through EasyPaisa.
+            </p>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="premium-pay-btn"
+            onclick="openPayment()">
+
+            <span>PAY SECURELY</span>
+
+            <i class="fas fa-arrow-right"></i>
+
+        </button>
+
+
+        <div class="payment-trust">
+
+            <span>
+                <i class="fas fa-shield-alt"></i>
+                Secure Payment
+            </span>
+
+            <span>
+                <i class="fas fa-globe"></i>
+                Worldwide Students
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+       PAYMENT POPUP
+========================== -->
+
+<div class="payment-popup" id="paymentPopup">
+
+    <div class="premium-payment-popup">
+
+        <button
+            class="close-payment"
+            onclick="closePayment()">
+            &times;
+        </button>
+
+
+        <div class="popup-header">
+
+            <div class="popup-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+
+            <span>SECURE PAYMENT</span>
+
+            <h3>BAYT-UL-QIRAT ACADEMY</h3>
+
+            <p>
+                Scan the QR code below to make your payment
+                through EasyPaisa.
+            </p>
+
+        </div>
+
+
+        <div class="qr-box">
+
+            <img
+                src="image/easypaisa-qr.png"
+                alt="Bayt-ul-Qirat Academy EasyPaisa Payment QR">
+
+        </div>
+
+
+        <div class="qr-instruction">
+
+            <span>
+                <i class="fas fa-mobile-alt"></i>
+            </span>
+
+            <p>
+                Open your EasyPaisa app and scan this
+                QR code to complete your payment.
+            </p>
+
+        </div>
+
+
+        <div class="payment-receipt">
+
+            <strong>After payment</strong>
+
+            <p>
+                Please send your payment receipt
+                to our official WhatsApp.
+            </p>
+
+        </div>
+
+
+        <a
+            href="https://wa.me/923392466941?text=Assalam-o-Alaikum%20Bayt-ul-Qirat%20Academy%2C%20I%20have%20completed%20my%20course%20fee%20payment.%20Please%20find%20my%20payment%20receipt%20attached."
+            target="_blank"
+            rel="noopener"
+            class="receipt-btn">
+
+            <i class="fab fa-whatsapp"></i>
+
+            SEND PAYMENT RECEIPT
+
+        </a>
+
+    </div>
+
+</div>
 
 <!-- =========================
           BLOG SECTION
@@ -985,77 +1213,130 @@ Providing one-to-one online classes for students worldwide.
 
 <footer class="footer">
 
+    <div class="footer-shape"></div>
+
     <div class="footer-container">
 
-        <div class="footer-box">
+        <!-- Academy -->
+        <div class="footer-column footer-about">
 
             <div class="footer-logo">
+                <img src="image/logo.png"
+                     alt="BAYT-UL-QIRAT ACADEMY Logo">
+            </div>
 
-    <img src="image/logo.png" alt="BAYT-UL-QIRAT ACADEMY Logo">
+            <h2>BAYT-UL-QIRAT ACADEMY</h2>
 
-</div>
-     <h2 class="footer-title">BAYT-UL-QIRAT ACADEMY</h2>
             <p>
                 Learn Quran Online with Tajweed, Hifz, Noorani Qaida,
                 Qiraat, Maqamat and Islamic Studies from qualified teachers.
             </p>
+
         </div>
 
-        <div class="footer-box">
-            <h3>Contact Us</h3>
 
-            <p><a href="tel:+923392466941">
-            <i class="fas fa-phone-alt"></i> +92 339 2466941
-        </a></p>
-            <p><a href="https://wa.me/923392466941" target="_blank">
-            <i class="fab fa-whatsapp"></i> WhatsApp: +92 339 2466941
-        </a></p>
-            <p><a href="mailto:qarimuhammadali56@gmail.com">
-            <i class="fas fa-envelope"></i> qarimuhammadali56@gmail.com
-        </a>
-    </p>
+        <!-- Our Courses -->
+        <div class="footer-column">
+
+            <h3>OUR COURSES</h3>
+
+            <a href="#courses">Noorani Qaida</a>
+            <a href="#courses">Quran Reading (Nazra)</a>
+            <a href="#courses">Tajweed Course</a>
+            <a href="#courses">Hifz-ul-Quran</a>
+            <a href="#courses">Qiraat & Maqamat</a>
+            <a href="#courses">Arabic Language</a>
+
         </div>
 
-        <div class="footer-box">
-            <h3>Quick Links</h3>
 
-            <a href="#home">Home</a><br>
-            <a href="#about">About</a><br>
-            <a href="#courses">Courses</a><br>
-            <a href="#teacher">Teacher</a><br>
-            <a href="#admission">Admission</a><br>
-            <a href="#contact">Contact</a>
+        <!-- Useful Links -->
+        <div class="footer-column">
+
+            <h3>USEFUL LINKS</h3>
+
+            <a href="#home">Free Trial Quran Classes</a>
+            <a href="#courses">Courses</a>
+            <a href="#admission">Admission</a>
+            <a href="#teacher">Our Teacher</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+
+        </div>
+
+
+        <!-- Contact -->
+        <div class="footer-column footer-contact">
+
+            <h3>CONTACT US</h3>
+
+            <a href="mailto:qarimuhammadali56@gmail.com">
+                <span class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span>qarimuhammadali56@gmail.com</span>
+            </a>
+
+            <a href="tel:+923392466941">
+                <span class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </span>
+                <span>+92 339 2466941</span>
+            </a>
+
+            <a href="https://wa.me/923392466941"
+               target="_blank"
+               rel="noopener">
+                <span class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </span>
+                <span>WhatsApp</span>
+            </a>
+
         </div>
 
     </div>
-<div class="footer-bottom">
 
-    <div class="footer-social">
 
-    <a href="https://www.facebook.com/baytulqiratacademy" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-        </a>
+    <!-- Bottom -->
+    <div class="footer-bottom">
 
-    
-        <a href="https://www.instagram.com/qari_m_ali/" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
+        <div class="footer-social">
 
-        <a href="https://youtube.com/@qarimuhammadali6706" target="_blank">
-            <i class="fab fa-youtube"></i>
-        </a>
+            <a href="https://www.facebook.com/baytulqiratacademy"
+               target="_blank"
+               rel="noopener"
+               aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
 
-        <a href="https://wa.me/923392466941" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+            <a href="https://www.instagram.com/qari_m_ali/"
+               target="_blank"
+               rel="noopener"
+               aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
 
+            <a href="https://youtube.com/@qarimuhammadali6706"
+               target="_blank"
+               rel="noopener"
+               aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="https://wa.me/923392466941"
+               target="_blank"
+               rel="noopener"
+               aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <p>
+            © 2026 BAYT-UL-QIRAT ACADEMY | All Rights Reserved
+        </p>
 
     </div>
 
-    <p>
-        © 2026 BAYT-UL-QIRAT ACADEMY | All Rights Reserved
-    </p>
-
-</div>
 </footer>
-<link rel="icon" type="image/x-icon" href="image/favicon.ico.png" alt="Students Learning Quran Online"

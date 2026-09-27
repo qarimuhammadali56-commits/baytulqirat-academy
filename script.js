@@ -454,3 +454,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+function openPayment() {
+    document.getElementById("paymentPopup").style.display = "flex";
+}
+
+function closePayment() {
+    document.getElementById("paymentPopup").style.display = "none";
+}
+
+window.addEventListener("click", function(event) {
+
+    const popup = document.getElementById("paymentPopup");
+
+    if (event.target === popup) {
+        closePayment();
+    }
+
+});
