@@ -1,0 +1,335 @@
+/* =========================================
+       BAYT-UL-QIRAT ACADEMEY
+          PREMIUM BLOG ARTICLE
+========================================= */
+
+.blog-article {
+    min-height: 100vh;
+    padding: 70px 20px;
+    background:
+        linear-gradient(
+            135deg,
+            #f8f5ec,
+            #ffffff,
+            #f3f7f3
+        );
+}
+
+
+/* =========================================
+             ARTICLE CONTAINER
+========================================= */
+
+.blog-article article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 55px 65px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-radius: 22px;
+
+    border: 1px solid rgba(11, 107, 58, 0.15);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.10);
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Decorative Top Line */
+
+.blog-article article::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #023e1f,
+        #c9a227,
+        #023e1f
+    );
+}
+
+
+/* =========================================
+                 MAIN TITLE
+========================================= */
+
+.blog-article h1 {
+    margin: 0 0 25px;
+
+    color: #023e1f;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    text-align: center;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+              INTRODUCTION
+========================================= */
+
+.article-intro {
+    font-size: 19px;
+
+    line-height: 1.9;
+
+    color: #555;
+
+    text-align: center;
+
+    margin-bottom: 45px;
+
+    padding: 25px 30px;
+
+    background: #f8f5ec;
+
+    border-left: 4px solid #c9a227;
+
+    border-radius: 12px;
+}
+
+
+/* =========================================
+                 HEADINGS
+========================================= */
+
+.blog-article h2 {
+    color: #023e1f;
+
+    font-size: 29px;
+
+    margin-top: 45px;
+
+    margin-bottom: 18px;
+
+    line-height: 1.3;
+
+    position: relative;
+}
+
+
+/* Golden underline */
+
+.blog-article h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+
+    height: 3px;
+
+    margin-top: 9px;
+
+    background: #c9a227;
+
+    border-radius: 10px;
+}
+
+
+.blog-article h3 {
+    color: #0b6b3a;
+
+    font-size: 22px;
+
+    margin-top: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+                   PARAGRAPHS
+========================================= */
+
+.blog-article p {
+    color: #444;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+                    LIST
+========================================= */
+
+.blog-article ul {
+    margin: 20px 0 30px;
+
+    padding-left: 25px;
+}
+
+
+.blog-article li {
+    color: #444;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+              ARTICLE CTA
+========================================= */
+
+.article-cta {
+    margin-top: 55px;
+
+    padding: 35px 30px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #023e1f,
+        #0b6b3a
+    );
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 35px rgba(2, 62, 31, 0.25);
+}
+
+
+.article-cta h2 {
+    color: #ffffff;
+
+    margin-top: 0;
+
+    font-size: 28px;
+}
+
+
+.article-cta h2::after {
+    display: none;
+}
+
+
+.article-cta p {
+    color: #f4f4f4;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+               CTA BUTTON
+========================================= */
+
+.article-btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #c9a227;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    border-radius: 30px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.article-btn:hover {
+    transform: translateY(-3px);
+
+    background: #b18b1d;
+
+    box-shadow:
+        0 10px 25px rgba(201, 162, 39, 0.35);
+}
+
+
+/* =========================================
+                MOBILE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .blog-article {
+        padding: 35px 12px;
+    }
+
+    .blog-article article {
+        padding: 35px 22px;
+
+        border-radius: 16px;
+    }
+
+    .blog-article h1 {
+        font-size: 31px;
+    }
+
+    .article-intro {
+        font-size: 16px;
+
+        padding: 20px 18px;
+
+        line-height: 1.8;
+    }
+
+    .blog-article h2 {
+        font-size: 24px;
+
+        margin-top: 35px;
+    }
+
+    .blog-article h3 {
+        font-size: 20px;
+    }
+
+    .blog-article p,
+    .blog-article li {
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+    .article-cta {
+        padding: 28px 20px;
+    }
+
+    .article-cta h2 {
+        font-size: 23px;
+    }
+
+    .article-btn {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+}

@@ -280,3 +280,177 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/*=========================
+      BLOG CARD ANIMATION
+=========================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const blogCards = document.querySelectorAll(".blog-card");
+
+    if (!blogCards.length) return;
+
+    const blogObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("blog-visible");
+
+                blogObserver.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.15
+    });
+
+
+    blogCards.forEach(card => {
+
+        blogObserver.observe(card);
+
+    });
+
+});
+/*=========================
+      COURSE CARD ANIMATION
+=========================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const courseCards = document.querySelectorAll(".courses .card");
+
+    if (!courseCards.length) return;
+
+    const courseObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("course-visible");
+
+                courseObserver.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.15
+    });
+
+
+    courseCards.forEach(card => {
+
+        courseObserver.observe(card);
+
+    });
+
+});
+/*=========================
+   COUNTRY CARD ANIMATION
+=========================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const countryCards = document.querySelectorAll(".country-card");
+
+    if (!countryCards.length) return;
+
+    const countryObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("country-visible");
+
+                countryObserver.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.15
+    });
+
+    countryCards.forEach(card => {
+        countryObserver.observe(card);
+    });
+
+});
+/*=========================
+        ABOUT ANIMATION
+=========================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const aboutSection = document.querySelector(".about");
+
+    if (!aboutSection) return;
+
+    const aboutObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("about-visible");
+
+                aboutObserver.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.15
+    });
+
+    aboutObserver.observe(aboutSection);
+
+});
+/*=========================
+   TEACHER & SKILLS ANIMATION
+=========================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const sections = document.querySelectorAll(".teacher, .skills");
+
+    if (!sections.length) return;
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                if (entry.target.classList.contains("teacher")) {
+                    entry.target.classList.add("teacher-visible");
+                }
+
+                if (entry.target.classList.contains("skills")) {
+                    entry.target.classList.add("skills-visible");
+                }
+
+                sectionObserver.unobserve(entry.target);
+            }
+
+        });
+
+    }, {
+        threshold: 0.15
+    });
+
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+
+});
