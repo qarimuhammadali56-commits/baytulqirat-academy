@@ -471,3 +471,27 @@ window.addEventListener("click", function(event) {
     }
 
 });
+/*=================================
+   COURSE CARD LANGUAGE SWITCH
+=================================*/
+
+function showCourseLang(button, lang) {
+
+    const card = button.closest(".card");
+
+    const english = card.querySelector(".course-en");
+    const urdu = card.querySelector(".course-ur");
+
+    if (lang === "ur") {
+
+        english.style.display = "none";
+        urdu.style.display = "block";
+
+    } else {
+
+        urdu.style.display = "none";
+        english.style.display = "block";
+
+    }
+
+}

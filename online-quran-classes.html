@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Online Quran Classes | Bayt-ul-Qirat Academy</title>
+
+<meta name="description" content="Join one-to-one online Quran classes for kids and adults worldwide at BAYT-UL-QIRAT ACADEMY.">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<section class="course-detail-page">
+<div class="course-detail-container">
+
+<div class="course-detail-top">
+
+<a href="index.html#courses" class="back-course">
+<i class="fas fa-arrow-left"></i>
+Back to Courses
+</a>
+
+<div class="course-language">
+<button class="active" onclick="showCourseDetail('en',this)">English</button>
+<button onclick="showCourseDetail('ur',this)">اردو</button>
+</div>
+
+</div>
+
+<div id="course-detail-en" class="course-detail-content">
+
+<span class="course-detail-label">ONLINE QURAN CLASSES</span>
+
+<h1>Online Quran Classes</h1>
+
+<p class="course-detail-intro">
+Learn the Holy Quran from the comfort of your home with flexible
+one-to-one online classes for children and adults worldwide.
+</p>
+
+<div class="course-detail-grid">
+
+<div class="detail-box">
+<i class="fas fa-user"></i>
+<h3>One-to-One Classes</h3>
+<p>Personal attention helps students learn according to their individual level and progress.</p>
+</div>
+
+<div class="detail-box">
+<i class="fas fa-globe"></i>
+<h3>Worldwide Learning</h3>
+<p>Students from different countries can learn Quran online from home.</p>
+</div>
+
+<div class="detail-box">
+<i class="fas fa-clock"></i>
+<h3>Flexible Timings</h3>
+<p>Class timings can be arranged according to the student's suitable schedule.</p>
+</div>
+
+<div class="detail-box">
+<i class="fas fa-video"></i>
+<h3>Online Platforms</h3>
+<p>Classes are available through Zoom and WhatsApp video calls.</p>
+</div>
+
+</div>
+
+<div class="course-detail-section">
+<h2>Why Choose Online Quran Classes?</h2>
+<p>
+Online learning allows students to study the Quran from home while
+receiving personal guidance and regular lessons from a qualified teacher.
+</p>
+</div>
+
+<a href="index.html#admission" class="course-admission-btn">
+BOOK FREE TRIAL CLASS
+<i class="fas fa-arrow-right"></i>
+</a>
+
+</div>
+
+<div id="course-detail-ur" class="course-detail-content" style="display:none;direction:rtl;">
+
+<span class="course-detail-label">آن لائن قرآن کلاسز</span>
+
+<h1>آن لائن قرآن کلاسز</h1>
+
+<p class="course-detail-intro">
+اپنے گھر سے بچوں اور بڑوں کے لیے دنیا بھر میں ون ٹو ون آن لائن
+قرآن کلاسز حاصل کریں، مناسب اور flexible timings کے ساتھ۔
+</p>
+
+<div class="course-detail-grid">
+
+<div class="detail-box">
+<i class="fas fa-user"></i>
+<h3>ون ٹو ون کلاسز</h3>
+<p>ذاتی توجہ کے ذریعے ہر طالب علم اپنی سطح اور رفتار کے مطابق سیکھ سکتا ہے۔</p>
+</div>
+
+<div class="detail-box">
+<i class="fas fa-globe"></i>
+<h3>دنیا بھر کے طلبہ</h3>
+<p>مختلف ممالک کے طلبہ اپنے گھر سے آن لائن قرآن سیکھ سکتے ہیں۔</p>
+</div>
+
+<div class="detail-box">
+<i class="fas fa-clock"></i>
+<h3>آسان اوقات</h3>
+<p>طالب علم کی سہولت کے مطابق کلاس کا وقت مقرر کیا جا سکتا ہے۔</p>
+</div>
+
+<div class="detail-box">
+<i class="fas fa-video"></i>
+<h3>آن لائن پلیٹ فارمز</h3>
+<p>Zoom اور WhatsApp Video Call کے ذریعے کلاسز دستیاب ہیں۔</p>
+</div>
+
+</div>
+
+<div class="course-detail-section">
+<h2>آن لائن قرآن کلاسز کیوں؟</h2>
+<p>
+آن لائن تعلیم کے ذریعے طلبہ گھر بیٹھے قرآنِ کریم سیکھ سکتے ہیں اور
+ماہر استاد سے ذاتی رہنمائی اور باقاعدہ سبق حاصل کر سکتے ہیں۔
+</p>
+</div>
+
+<a href="index.html#admission" class="course-admission-btn">
+مفت ٹرائل کلاس بک کریں
+<i class="fas fa-arrow-left"></i>
+</a>
+
+</div>
+
+</div>
+</section>
+
+<script>
+function showCourseDetail(lang,button){
+const english=document.getElementById("course-detail-en");
+const urdu=document.getElementById("course-detail-ur");
+const buttons=document.querySelectorAll(".course-language button");
+
+buttons.forEach(btn=>btn.classList.remove("active"));
+button.classList.add("active");
+
+if(lang==="ur"){
+english.style.display="none";
+urdu.style.display="block";
+}else{
+urdu.style.display="none";
+english.style.display="block";
+}
+}
+</script>
+
+</body>
+</html>
