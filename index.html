@@ -2678,93 +2678,1425 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 
 </section>
-<section class="admission" id="admission">
 
-    <h2>ONLINE ADMISSION</h2>
+<!-- =========================================
+     PREMIUM ONLINE ADMISSION
+========================================== -->
 
-    <p>Start your Quran learning journey with BAYT-UL-QIRAT ACADEMY</p>
+<section class="premium-admission" id="admission">
 
-    <form id="admissionForm" class="admission-form">
+    <div class="premium-admission-container">
 
-        <input type="text" id="name" placeholder="Your Name" required>
+        <!-- Section Heading -->
+        <div class="premium-admission-heading">
 
-        <input type="text" id="father" placeholder="Father Name" required>
+            <span class="premium-admission-tag">
+                BEGIN YOUR JOURNEY
+            </span>
 
-        <input type="number" id="age" placeholder="Your Age" required>
+            <h2>
+                Online <span>Admission</span>
+            </h2>
 
-        <input type="text" id="country" placeholder="Country" required>
+            <p>
+                Take the first step towards learning the Holy Quran.
+                Complete the form below to apply for your online Quran classes.
+            </p>
 
-        <input type="tel" id="phone" placeholder="WhatsApp Number" required>
+        </div>
 
-        <select id="course" required>
 
-            <option value="">Select Course</option>
+        <div class="premium-admission-layout">
 
-            <option>Noorani Qaida</option>
+            <!-- Left Information Panel -->
+            <div class="premium-admission-info">
 
-            <option>Nazra Quran</option>
+                <div class="premium-admission-emblem">
+                    <i class="fas fa-book-open"></i>
+                </div>
 
-            <option>Hifz-ul-Quran</option>
+                <span class="premium-admission-welcome">
+                    WELCOME TO OUR ACADEMY
+                </span>
 
-            <option>Qiraat Course</option>
+                <h3>
+                    Start Learning the Quran with Confidence
+                </h3>
 
-            <option>Tajweed Course</option>
+                <p>
+                    Join BAYT-UL-QIRAT ACADEMY for personalized online
+                    Quran learning with qualified teachers and flexible
+                    class timings.
+                </p>
 
-            <option>Maqamat Course</option>
+                <div class="premium-admission-benefits">
 
-        </select>
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        <span>One-to-one online classes</span>
+                    </div>
 
-        <button type="submit">
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        <span>Courses for kids and adults</span>
+                    </div>
 
-            Submit Application
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        <span>Students welcome worldwide</span>
+                    </div>
 
-        </button>
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        <span>Free trial class available</span>
+                    </div>
 
-    </form>
+                </div>
+
+                <div class="premium-admission-hadith">
+                    <span>خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</span>
+                    <p>
+                        The best among you are those who learn the Quran
+                        and teach it.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Admission Form -->
+            <div class="premium-admission-form-card">
+
+                <div class="premium-form-title">
+
+                    <div>
+                        <span>STUDENT REGISTRATION</span>
+                        <h3>Apply for Admission</h3>
+                    </div>
+
+                    <div class="premium-form-icon">
+                        <i class="fas fa-user-edit"></i>
+                    </div>
+
+                </div>
+
+                <p class="premium-form-description">
+                    Please enter your details below.
+                </p>
+
+
+                <form id="admissionForm" class="admission-form premium-form">
+
+                    <!-- Student Name -->
+                    <div class="premium-form-field">
+
+                        <label for="name">
+                            Student Name <span>*</span>
+                        </label>
+
+                        <div class="premium-input-wrap">
+                            <i class="fas fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter student's full name"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- Father Name -->
+                    <div class="premium-form-field">
+
+                        <label for="father">
+                            Father / Guardian Name <span>*</span>
+                        </label>
+
+                        <div class="premium-input-wrap">
+                            <i class="fas fa-user-tie"></i>
+
+                            <input
+                                type="text"
+                                id="father"
+                                name="father"
+                                placeholder="Enter father or guardian name"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- Age -->
+                    <div class="premium-form-field">
+
+                        <label for="age">
+                            Student Age <span>*</span>
+                        </label>
+
+                        <div class="premium-input-wrap">
+                            <i class="fas fa-calendar-alt"></i>
+
+                            <input
+                                type="number"
+                                id="age"
+                                name="age"
+                                placeholder="Enter age"
+                                min="3"
+                                max="100"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- Country -->
+                    <div class="premium-form-field">
+
+                        <label for="country">
+                            Country <span>*</span>
+                        </label>
+
+                        <div class="premium-input-wrap">
+                            <i class="fas fa-globe"></i>
+
+                            <select id="country" name="country" required>
+
+                                <option value="">Select your country</option>
+
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Brunei">Brunei</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cabo Verde">Cabo Verde</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Central African Republic">Central African Republic</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Cyprus">Cyprus</option>
+                                <option value="Czechia">Czechia</option>
+                                <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="Dominican Republic">Dominican Republic</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Eswatini">Eswatini</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Grenada">Grenada</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                <option value="Guyana">Guyana</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="India">India</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Iran">Iran</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kazakhstan">Kazakhstan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kiribati">Kiribati</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="Laos">Laos</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libya">Libya</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lithuania">Lithuania</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marshall Islands">Marshall Islands</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Micronesia">Micronesia</option>
+                                <option value="Moldova">Moldova</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Montenegro">Montenegro</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar">Myanmar</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value="Nauru">Nauru</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="North Korea">North Korea</option>
+                                <option value="North Macedonia">North Macedonia</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Palau">Palau</option>
+                                <option value="Palestine">Palestine</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Papua New Guinea">Papua New Guinea</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Republic of the Congo">Republic of the Congo</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                <option value="Saint Lucia">Saint Lucia</option>
+                                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                                <option value="Samoa">Samoa</option>
+                                <option value="San Marino">San Marino</option>
+                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Serbia">Serbia</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Slovakia">Slovakia</option>
+                                <option value="Slovenia">Slovenia</option>
+                                <option value="Solomon Islands">Solomon Islands</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="South Korea">South Korea</option>
+                                <option value="South Sudan">South Sudan</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Syria">Syria</option>
+                                <option value="Tajikistan">Tajikistan</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Timor-Leste">Timor-Leste</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan">Turkmenistan</option>
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States">United States</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Vatican City">Vatican City</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <!-- WhatsApp -->
+                    <div class="premium-form-field">
+
+                        <label for="phone">
+                            WhatsApp Number <span>*</span>
+                        </label>
+
+                        <div class="premium-input-wrap">
+                            <i class="fab fa-whatsapp"></i>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Include your country code"
+                                autocomplete="tel"
+                                required
+                            >
+                        </div>
+
+                        <small class="premium-field-help">
+                            Example: +92 300 1234567
+                        </small>
+
+                    </div>
+
+
+                    <!-- Course -->
+                    <div class="premium-form-field">
+
+                        <label for="course">
+                            Select Your Course <span>*</span>
+                        </label>
+
+                        <div class="premium-input-wrap">
+                            <i class="fas fa-book-open"></i>
+
+                            <select id="course" name="course" required>
+
+                                <option value="">Choose a Quran course</option>
+                                <option value="Noorani Qaida">Noorani Qaida</option>
+                                <option value="Nazra Quran">Nazra Quran</option>
+                                <option value="Hifz-ul-Quran">Hifz-ul-Quran</option>
+                                <option value="Qiraat Course">Qiraat Course</option>
+                                <option value="Tajweed Course">Tajweed Course</option>
+                                <option value="Maqamat Course">Maqamat Course</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <div class="premium-form-note">
+                        <i class="fas fa-shield-alt"></i>
+                        Please ensure your WhatsApp number is correct
+                        so we can respond to your admission enquiry.
+                    </div>
+
+
+                    <button type="submit" class="premium-admission-submit">
+
+                        <span>SUBMIT APPLICATION</span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <p class="premium-form-footer">
+                        By submitting, you agree to be contacted about
+                        your Quran course enquiry.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
-<section class="contact" id="contact">
 
-    <h2>CONTACT US</h2>
+<!-- =========================================
+     PREMIUM ADMISSION CSS
+========================================== -->
 
-    <p>We are here to help you start your Quran learning journey.</p>
-   
-<div class="contact-box">
+<style>
 
-   <a href="tel:+923392466941" class="contact-card">
+.premium-admission,
+.premium-admission * {
+    box-sizing: border-box;
+}
 
-    <i class="fas fa-phone-alt"></i>
+.premium-admission {
+    width: 100%;
+    padding: 85px 20px;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f9f6 100%);
+}
 
-    <h3>Call</h3>
+.premium-admission-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
 
-    <p>+92 339 2466941</p>
+/* Heading */
 
-</a>
+.premium-admission-heading {
+    max-width: 740px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
 
-  <a href="https://wa.me/923392466941" target="_blank" class="contact-card">
+.premium-admission-tag {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #a88700;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
 
-    <i class="fab fa-whatsapp"></i>
+.premium-admission-heading h2 {
+    margin: 0 0 15px;
+    color: #023e1f;
+    font-size: 38px;
+    line-height: 1.25;
+    font-weight: 800;
+}
 
-    <h3>WhatsApp</h3>
+.premium-admission-heading h2 span {
+    color: #b08d00;
+}
 
-    <p>+92 339 2466941</p>
+.premium-admission-heading p {
+    margin: 0;
+    color: #626b64;
+    font-size: 15px;
+    line-height: 1.8;
+}
 
-    </a>
+/* Main layout */
 
-    <a href="mailto:qarimuhammadali56@gmail.com" class="contact-card">
+.premium-admission-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 30px;
+    align-items: stretch;
+}
 
-    <i class="fas fa-envelope"></i>
+/* Left panel */
 
-    <h3>Email</h3>
+.premium-admission-info {
+    padding: 38px 30px;
+    color: #ffffff;
+    background: linear-gradient(145deg, #023e1f, #075b30);
+    border-radius: 18px;
+    box-shadow: 0 16px 38px rgba(2, 62, 31, 0.13);
+}
 
-    <p>qarimuhammadali56@gmail.com</p>
+.premium-admission-emblem {
+    width: 66px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: #023e1f;
+    background: #ffd700;
+    border-radius: 16px;
+    font-size: 29px;
+}
 
-</a>
+.premium-admission-welcome {
+    display: block;
+    margin-bottom: 12px;
+    color: #ffd700;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
 
-</div>
+.premium-admission-info h3 {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.35;
+}
+
+.premium-admission-info > p {
+    margin: 0;
+    color: rgba(255,255,255,0.85);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.premium-admission-benefits {
+    display: grid;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.premium-admission-benefits > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.premium-admission-benefits i {
+    margin-top: 3px;
+    color: #ffd700;
+}
+
+.premium-admission-hadith {
+    margin-top: 32px;
+    padding: 20px 15px;
+    text-align: center;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,215,0,0.24);
+    border-radius: 11px;
+}
+
+.premium-admission-hadith span {
+    color: #ffd700;
+    font-size: 19px;
+    line-height: 1.9;
+}
+
+.premium-admission-hadith p {
+    margin: 8px 0 0;
+    color: rgba(255,255,255,0.85);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Form card */
+
+.premium-admission-form-card {
+    min-width: 0;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #e4ebe5;
+    border-radius: 18px;
+    box-shadow: 0 12px 38px rgba(0,0,0,0.055);
+}
+
+.premium-form-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.premium-form-title > div:first-child > span {
+    display: block;
+    margin-bottom: 7px;
+    color: #a88700;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.premium-form-title h3 {
+    margin: 0;
+    color: #023e1f;
+    font-size: 25px;
+    line-height: 1.35;
+}
+
+.premium-form-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffd700;
+    background: #023e1f;
+    border-radius: 13px;
+    font-size: 20px;
+}
+
+.premium-form-description {
+    margin: 0 0 25px;
+    color: #727a73;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Fields */
+
+.premium-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 19px 16px;
+}
+
+.premium-form-field {
+    min-width: 0;
+}
+
+.premium-form-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #263a2c;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.premium-form-field label span {
+    color: #b08d00;
+}
+
+.premium-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    min-height: 49px;
+    padding: 0 12px;
+    background: #fbfcfb;
+    border: 1px solid #dfe7e0;
+    border-radius: 8px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.premium-input-wrap:focus-within {
+    border-color: #267348;
+    box-shadow: 0 0 0 3px rgba(2,62,31,0.08);
+}
+
+.premium-input-wrap > i {
+    flex-shrink: 0;
+    color: #52735d;
+    font-size: 14px;
+}
+
+.premium-input-wrap input,
+.premium-input-wrap select {
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #24382a;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.premium-input-wrap input::placeholder {
+    color: #969e98;
+}
+
+.premium-input-wrap select {
+    cursor: pointer;
+}
+
+.premium-field-help {
+    display: block;
+    margin-top: 6px;
+    color: #7b847d;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+/* Form note */
+
+.premium-form-note {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    padding: 13px;
+    color: #58685d;
+    background: #f2f7f3;
+    border-radius: 8px;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.premium-form-note i {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: #267348;
+}
+
+/* Submit */
+
+.premium-admission-submit {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ffd700;
+    color: #023e1f;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.premium-admission-submit:hover {
+    background: #023e1f;
+    color: #ffd700;
+    transform: translateY(-2px);
+}
+
+.premium-form-footer {
+    grid-column: 1 / -1;
+    margin: -5px 0 0;
+    color: #838b85;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .premium-admission-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .premium-admission-info {
+        padding: 32px 27px;
+    }
+
+    .premium-admission-info h3 {
+        font-size: 26px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .premium-admission {
+        padding: 60px 15px;
+    }
+
+    .premium-admission-heading {
+        margin-bottom: 32px;
+    }
+
+    .premium-admission-heading h2 {
+        font-size: 30px;
+    }
+
+    .premium-admission-heading p {
+        font-size: 14px;
+    }
+
+    .premium-admission-info {
+        padding: 28px 22px;
+        border-radius: 14px;
+    }
+
+    .premium-admission-info h3 {
+        font-size: 24px;
+    }
+
+    .premium-admission-form-card {
+        padding: 24px 18px;
+        border-radius: 14px;
+    }
+
+    .premium-form-title h3 {
+        font-size: 22px;
+    }
+
+    .premium-form {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .premium-form-note,
+    .premium-admission-submit,
+    .premium-form-footer {
+        grid-column: auto;
+    }
+}
+
+</style>
+<!-- =========================================
+     PREMIUM CONTACT SECTION
+========================================== -->
+
+<section class="academy-contact" id="contact">
+
+    <div class="academy-contact-container">
+
+        <!-- Heading -->
+        <div class="academy-contact-heading">
+
+            <span class="academy-contact-tag">
+                GET IN TOUCH
+            </span>
+
+            <h2>
+                Contact <span>Our Academy</span>
+            </h2>
+
+            <p>
+                Have questions about our online Quran classes?
+                Contact us and take the first step in your Quran learning journey.
+            </p>
+
+        </div>
+
+
+        <div class="academy-contact-layout">
+
+            <!-- Left Side -->
+            <div class="academy-contact-info">
+
+                <span class="academy-contact-small-title">
+                    WE ARE HERE TO HELP
+                </span>
+
+                <h3>
+                    Let's Begin Your Quran Learning Journey
+                </h3>
+
+                <p class="academy-contact-description">
+                    Contact BAYT-UL-QIRAT ACADEMY for information about
+                    Noorani Qaida, Nazra Quran, Tajweed, Hifz-ul-Quran,
+                    Qiraat and Maqamat courses.
+                </p>
+
+                <div class="academy-contact-points">
+
+                    <div class="academy-contact-point">
+                        <i class="fas fa-check-circle"></i>
+                        Personalized online Quran classes
+                    </div>
+
+                    <div class="academy-contact-point">
+                        <i class="fas fa-check-circle"></i>
+                        Flexible class timings
+                    </div>
+
+                    <div class="academy-contact-point">
+                        <i class="fas fa-check-circle"></i>
+                        Free trial class for new students
+                    </div>
+
+                </div>
+
+                <div class="academy-contact-verse">
+                    <span>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+                    <p>Begin your journey with the Book of Allah.</p>
+                </div>
+
+            </div>
+
+
+            <!-- Right Side: Contact Cards -->
+            <div class="academy-contact-cards">
+
+                <!-- Phone -->
+                <a href="tel:+923392466941"
+                   class="academy-contact-card">
+
+                    <div class="academy-contact-icon phone-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+
+                    <div class="academy-contact-card-text">
+                        <span>CALL OUR ACADEMY</span>
+                        <h3>Phone</h3>
+                        <p>+92 339 2466941</p>
+                    </div>
+
+                    <i class="fas fa-arrow-up-right-from-square academy-contact-arrow"></i>
+
+                </a>
+
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/923392466941"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="academy-contact-card">
+
+                    <div class="academy-contact-icon whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+
+                    <div class="academy-contact-card-text">
+                        <span>CHAT WITH US</span>
+                        <h3>WhatsApp</h3>
+                        <p>+92 339 2466941</p>
+                    </div>
+
+                    <i class="fas fa-arrow-up-right-from-square academy-contact-arrow"></i>
+
+                </a>
+
+
+                <!-- Email -->
+                <a href="mailto:qarimuhammadali56@gmail.com"
+                   class="academy-contact-card">
+
+                    <div class="academy-contact-icon email-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div class="academy-contact-card-text">
+                        <span>SEND US AN EMAIL</span>
+                        <h3>Email</h3>
+                        <p>qarimuhammadali56@gmail.com</p>
+                    </div>
+
+                    <i class="fas fa-arrow-up-right-from-square academy-contact-arrow"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom CTA -->
+        <div class="academy-contact-bottom">
+
+            <div>
+                <h3>Ready to Start Learning the Quran?</h3>
+                <p>Book your free trial class today.</p>
+            </div>
+
+            <a href="#admission" class="academy-contact-cta">
+                BOOK FREE TRIAL
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
+
+
+<!-- =========================================
+     CONTACT SECTION STYLES
+========================================== -->
+
+<style>
+
+.academy-contact,
+.academy-contact * {
+    box-sizing: border-box;
+}
+
+.academy-contact {
+    width: 100%;
+    padding: 85px 20px;
+    background: #f7f9f7;
+}
+
+.academy-contact-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* Heading */
+
+.academy-contact-heading {
+    max-width: 720px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.academy-contact-tag {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #a88700;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.academy-contact-heading h2 {
+    margin: 0 0 15px;
+    color: #023e1f;
+    font-size: 38px;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+.academy-contact-heading h2 span {
+    color: #b08d00;
+}
+
+.academy-contact-heading > p {
+    margin: 0;
+    color: #626b64;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Main layout */
+
+.academy-contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 35px;
+    align-items: stretch;
+}
+
+/* Left information panel */
+
+.academy-contact-info {
+    padding: 38px 32px;
+    color: #ffffff;
+    background: linear-gradient(145deg, #023e1f, #075b30);
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(2, 62, 31, 0.12);
+}
+
+.academy-contact-small-title {
+    display: block;
+    margin-bottom: 13px;
+    color: #ffd700;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+}
+
+.academy-contact-info > h3 {
+    margin: 0 0 16px;
+    color: #ffffff;
+    font-size: 29px;
+    line-height: 1.35;
+}
+
+.academy-contact-description {
+    margin: 0;
+    color: rgba(255,255,255,0.84);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.academy-contact-points {
+    display: grid;
+    gap: 15px;
+    margin-top: 27px;
+}
+
+.academy-contact-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.academy-contact-point i {
+    margin-top: 3px;
+    color: #ffd700;
+}
+
+.academy-contact-verse {
+    margin-top: 30px;
+    padding: 17px;
+    text-align: center;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,215,0,0.25);
+    border-radius: 10px;
+}
+
+.academy-contact-verse span {
+    color: #ffd700;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.academy-contact-verse p {
+    margin: 7px 0 0;
+    color: rgba(255,255,255,0.85);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* Contact cards */
+
+.academy-contact-cards {
+    display: grid;
+    align-content: center;
+    gap: 17px;
+    min-width: 0;
+}
+
+.academy-contact-card {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    min-width: 0;
+    padding: 22px;
+    color: inherit;
+    background: #ffffff;
+    border: 1px solid #e5ebe6;
+    border-radius: 13px;
+    text-decoration: none;
+    box-shadow: 0 7px 22px rgba(0,0,0,0.035);
+    transition: transform 0.25s ease, box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.academy-contact-card:hover {
+    transform: translateY(-4px);
+    border-color: #c5d5c9;
+    box-shadow: 0 13px 28px rgba(2,62,31,0.09);
+}
+
+.academy-contact-icon {
+    flex: 0 0 54px;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    font-size: 23px;
+}
+
+.phone-icon {
+    color: #023e1f;
+    background: #eaf3ed;
+}
+
+.whatsapp-icon {
+    color: #ffffff;
+    background: #20bd5a;
+}
+
+.email-icon {
+    color: #023e1f;
+    background: #fff5c9;
+}
+
+.academy-contact-card-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.academy-contact-card-text > span {
+    display: block;
+    margin-bottom: 4px;
+    color: #a88700;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.academy-contact-card-text h3 {
+    margin: 0 0 5px;
+    color: #023e1f;
+    font-size: 19px;
+}
+
+.academy-contact-card-text p {
+    margin: 0;
+    color: #59635c;
+    font-size: 13px;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+
+.academy-contact-arrow {
+    flex-shrink: 0;
+    color: #829086;
+    font-size: 14px;
+}
+
+/* Bottom call to action */
+
+.academy-contact-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 38px;
+    padding: 27px 30px;
+    background: #ffffff;
+    border: 1px solid #e5ebe6;
+    border-radius: 14px;
+}
+
+.academy-contact-bottom h3 {
+    margin: 0 0 7px;
+    color: #023e1f;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.academy-contact-bottom p {
+    margin: 0;
+    color: #69726b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.academy-contact-cta {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 14px 20px;
+    color: #023e1f;
+    background: #ffd700;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+    transition: 0.25s ease;
+}
+
+.academy-contact-cta:hover {
+    color: #ffffff;
+    background: #075b30;
+}
+
+/* Tablet */
+
+@media (max-width: 850px) {
+    .academy-contact-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .academy-contact-info {
+        padding: 32px 26px;
+    }
+
+    .academy-contact-info > h3 {
+        font-size: 26px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .academy-contact {
+        padding: 60px 15px;
+    }
+
+    .academy-contact-heading {
+        margin-bottom: 32px;
+    }
+
+    .academy-contact-heading h2 {
+        font-size: 29px;
+    }
+
+    .academy-contact-heading > p {
+        font-size: 14px;
+    }
+
+    .academy-contact-info {
+        padding: 28px 21px;
+        border-radius: 14px;
+    }
+
+    .academy-contact-info > h3 {
+        font-size: 24px;
+    }
+
+    .academy-contact-card {
+        gap: 13px;
+        padding: 17px 14px;
+    }
+
+    .academy-contact-icon {
+        flex-basis: 46px;
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+    }
+
+    .academy-contact-card-text h3 {
+        font-size: 17px;
+    }
+
+    .academy-contact-card-text p {
+        font-size: 12px;
+    }
+
+    .academy-contact-bottom {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 25px 18px;
+    }
+
+    .academy-contact-bottom h3 {
+        font-size: 19px;
+    }
+
+    .academy-contact-cta {
+        width: 100%;
+        padding: 14px 12px;
+    }
+}
+
+</style>
 
 
 <!-- =========================
